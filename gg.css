@@ -1,0 +1,148 @@
+body{
+    background-color:bisque;
+}
+
+header {
+    background: linear-gradient(0, #120c56, #000000);
+    padding: 10px;
+}
+
+/**/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar {
+    width: 20px;
+    height: 4px;
+    background-color: white;
+    margin: 4px;
+}
+
+.menu-hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    ;
+}
+
+/*Deixar do lado do texto*/
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+    width: 95%;
+    margin: auto;
+
+}
+
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    font-family: cursive;
+}
+
+footer{
+background-color: burlywood;
+position: relative;
+text-align: center;
+bottom: 0;
+width: 95%;
+padding: 10px;
+}
+
+
+/*Organiza em colunas*/
+
+.container-footer{
+display: flex;
+justify-content: space-between;
+padding-left: 35px;
+padding-right: 35px;
+}
+
+footer h3{
+    font-family:Brush Script MT, Brush Script Std, cursive; ;
+    font-weight: 900;
+    color: red;
+    bottom: 10px;
+}
+
+
+
+
+
+/* Ajustar o tamanho da tela    (Media) */
+
+@media (max-width:768px) {
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .menu li {
+        margin: 10px 0px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .conteudo {
+        display: inline;
+    }
+
+    section img {
+        padding: 15px;
+    }
+
+    .container-footer{
+        display: inline-block;
+        text-align: center;
+    }
+
+    footer p{
+        text-align: center;
+    }
+    
+    .coluna{
+        margin-bottom: 30px;
+    }
+}
+
+
